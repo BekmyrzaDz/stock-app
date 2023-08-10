@@ -5,7 +5,7 @@ import {getStocks} from './redux/asyncActions.ts'
 
 export const Home = () => {
   const dispatch = useAppDispatch()
-  const stocks = useAppSelector(state => state.stocks)
+  const {stocks} = useAppSelector(state => state?.stocks)
   console.log(stocks)
 
   useEffect(() => {

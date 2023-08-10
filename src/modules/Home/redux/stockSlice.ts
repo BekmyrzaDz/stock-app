@@ -8,7 +8,7 @@ const initialState: IStockState = {
   isError: false,
 }
 
-// Posts Slice
+// Stocks Slice
 export const stocksSlice = createSlice({
   name: 'stocks',
   initialState,

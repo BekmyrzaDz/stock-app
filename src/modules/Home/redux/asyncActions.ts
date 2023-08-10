@@ -3,7 +3,7 @@ import {AxiosError} from "axios";
 import postsService from "../services";
 import {IStock} from "../types/index.ts"
 
-// Get all posts
+// Get all stocks
 export const getStocks = createAsyncThunk<
   IStock[],
   string,

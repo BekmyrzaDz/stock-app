@@ -3,7 +3,7 @@ import {IStock} from "../types/index.ts"
 
 const TOKEN = import.meta.env.VITE_APP_API_TOKEN
 
-// Get stocks
+// Get all stocks
 const getStocks = async (): Promise<IStock[]> => {
   const response = await axios.get(`/stock/msft/chart/5y?token=${TOKEN}`)
 
